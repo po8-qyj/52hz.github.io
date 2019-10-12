@@ -269,156 +269,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://po8-qyj.github.io/2019/10/12/1011/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="po8-qyj">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="po8-qyj">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/12/1011/" itemprop="url">从入门到普及-高一模拟赛题解</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-12T19:24:59+08:00">
-                2019-10-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h1><p><em>by 高二蒟蒻学渣</em></p>
-<h2 id="Frog"><a href="#Frog" class="headerlink" title="Frog"></a>Frog</h2><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>这道题如果你爆零了，需要对你惩罚；</p>
-<p>要求最低得分：30 pts</p>
-<h4 id="得分情况"><a href="#得分情况" class="headerlink" title="得分情况"></a>得分情况</h4><p>注意看我的数据范围，</p>
-<p>对10%的数据，有字符串的长度为2，根据题意，必然是 字符串  <strong>RL</strong>，这10分是我送给你们的；</p>
-<p>对于40%的数据，其中我抽出了两个样例放在测试数据里面，<strong><em>20+10</em> =<em>30pts</em></strong>到手，暴力算法我不知道怎么打，请没有得满分的同学讲一下做法；</p>
-<p>对于100%的数，请看正文；</p>
-<h4 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h4><p>一句话题解</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我的做法是从左向右一组R和一组L进行计算，具体步骤看代码；因为最后只会在分解的两个R，L之间不断跳跃，注意判断一下每组R和L的strlen奇偶性，然后判断实在临界点的R位置+1还是临界点的L+1；</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="Boxer"><a href="#Boxer" class="headerlink" title="Boxer"></a>Boxer</h2><h4 id="前言-1"><a href="#前言-1" class="headerlink" title="前言"></a>前言</h4><p>这道题也要求不能爆零；</p>
-<h4 id="得分情况-1"><a href="#得分情况-1" class="headerlink" title="得分情况"></a>得分情况</h4><p>不多说了，感觉没什么好说的（希望各位文件名不要打错）；</p>
-<h4 id="正解"><a href="#正解" class="headerlink" title="正解"></a>正解</h4><p>应该是不用开long long的，毕竟max_ai才150000，自然想到这题应该没太多求和骚操作；</p>
-<p>空间也比较正常吧；</p>
-<p>思路：要尽可能选的人多，表面上看起来很复杂，但代码短的一批，还很好理解；</p>
-<p>为了让人尽量多，输入的重量顺序显然没有影响，那就先sort排下序(或者冒泡)，以下给出两种做法，思想基本一致：</p>
-<p>①从大到小枚举重量（注意以下重量都排过序），再一层循环内枚举+1，0，-1，这样做是为了让前面较大值对最大个数选取影响尽可能小，累计最前面的改变过的数，注意判断大于0！！！！；</p>
-<p>②从小到大，循环内枚举-1，0，+1，原理和①相似；</p>
-<hr>
-<h2 id="energy"><a href="#energy" class="headerlink" title="energy"></a>energy</h2><h4 id="前言-2"><a href="#前言-2" class="headerlink" title="前言"></a>前言</h4><p>允许爆零；</p>
-<h4 id="得分情况-2"><a href="#得分情况-2" class="headerlink" title="得分情况"></a>得分情况</h4><p>不多说了</p>
-<h4 id="正解-1"><a href="#正解-1" class="headerlink" title="正解"></a>正解</h4><p>结构体node e[];储存ai,bi值(当然你用数组我也不拦着)，因为合并的方式很特殊，可以不管合并的顺序，由于k可以为负数，考虑三种情况dp [maxn] [3]</p>
-<p>dp[i][1]表示在不使用法力情况下，i位释放的能量；</p>
-<p>dp[i][2]表示到第i位施法，可知有两种情况：</p>
-<p>①到第i位，第i-1位也被施法，所以dp[i] [2]=dp[i-1] [2]+k<em>e[i].a</em>k*e[i-1].b;</p>
-<p>②到第i位，第i-1位未被施法，所以dp[i] [2]=dp[i-1] [1]+k<em>e[i].a</em>e[i-1].b(由dp[][1]转移,i-1未被施法);</p>
-<p>dp[i] [3]表示到第i位不施法，可知也有两种情况：</p>
-<p>①到第i位，第i-1位被施法，所以dp[i] [3]=dp[i-1] [2]+e[i].a<em>k</em>e[i-1].b(由dp[][2]转移，因为i-1被施法，所以是dp[][2]);</p>
-<p>②到第i位，第i-1未被施法，所以dp[i] [3]=dp[i-1] [3]+e[i].a*e[i-1].b;</p>
-<p>对每种状态的分支算出结果取min();输出结果时也对三种状态取min();</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://po8-qyj.github.io/2019/10/12/dd/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -702,7 +552,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -710,15 +560,6 @@
 
             
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
-                
-              </div>
             
 
           </nav>
