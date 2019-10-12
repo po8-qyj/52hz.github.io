@@ -90,12 +90,13 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="po8-qyj">
-<meta property="og:url" content="https://po8-qyj.github.io/tags/题解/index.html">
+<meta property="og:title" content="All categories">
+<meta property="og:url" content="https://po8-qyj.github.io/categories/index.html">
 <meta property="og:site_name" content="po8-qyj">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-10-12T12:48:25.591Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="po8-qyj">
+<meta name="twitter:title" content="All categories">
 
 
 
@@ -125,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="https://po8-qyj.github.io/tags/题解/">
+  <link rel="canonical" href="https://po8-qyj.github.io/categories/">
 
 
 
 
 
-  <title>标签: 题解 | po8-qyj</title>
+  <title>All categories | po8-qyj</title>
   
 
 
@@ -150,7 +151,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -207,9 +208,9 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-about"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
             
             标签
           </a>
@@ -217,9 +218,9 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-categories"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
             
             分类
           </a>
@@ -227,9 +228,9 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archives"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
             
             归档
           </a>
@@ -254,52 +255,43 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>题解<small>标签</small>
-        </h1>
-      </div>
+	<h1 class="post-title" itemprop="name headline">All categories</h1>
+
+
+
+</header>
 
       
+      
+      
+      <div class="post-body">
         
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/10/12/1011/" itemprop="url">
+          <div class="category-all-page">
+            <div class="category-all-title">
+                暂无分类
+            </div>
+            <div class="category-all">
               
-                <span itemprop="name">从入门到普及-高一模拟赛题解</span>
-              
-            </a>
+            </div>
+          </div>
         
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-10-12T19:24:59+08:00" content="2019-10-12">
-          10-12
-        </time>
       </div>
-
-    </header>
-  </article>
-
-
+      
+      
       
     </div>
-
+    
+    
+    
   </div>
-  
-  
-  
-
-  
 
 
           </div>
@@ -307,6 +299,13 @@
 
 
           
+
+  
+   <div id="gitalk-container"></div>
+  
+   
+
+
         </div>
         
           
@@ -340,9 +339,9 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -350,15 +349,6 @@
 
             
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
-                
-              </div>
             
 
           </nav>
@@ -579,6 +569,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -619,6 +613,21 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '2ce7c51eab4ec7071052',
+          clientSecret: 'aaa49be62a2217705b25ccfdb390cb2aaf102419',
+          repo: 'po8-qyj.github.io',
+          owner: 'po8-qyj',
+          admin: ['po8-qyj'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+       </script>
 
 
   

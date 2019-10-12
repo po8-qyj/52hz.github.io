@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="题解,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -89,18 +89,17 @@
 
 
 
-<meta name="description" content="Solutionby 高二蒟蒻学渣 Frog前言这道题如果你爆零了，需要对你惩罚； 要求最低得分：30 pts 得分情况注意看我的数据范围， 对10%的数据，有字符串的长度为2，根据题意，必然是 字符串  RL，这10分是我送给你们的； 对于40%的数据，其中我抽出了两个样例放在测试数据里面，20+10 =30pts到手，暴力算法我不知道怎么打，请没有得满分的同学讲一下做法； 对于100%的数，请">
-<meta name="keywords" content="题解">
+<meta name="description" content="高二蒟蒻瑟瑟发抖">
 <meta property="og:type" content="article">
 <meta property="og:title" content="从入门到普及-高一模拟赛题解">
-<meta property="og:url" content="https://po8-qyj.github.io/2019/10/12/1011/index.html">
+<meta property="og:url" content="https://po8-qyj.github.io/2019/10/12/1/index.html">
 <meta property="og:site_name" content="po8-qyj">
-<meta property="og:description" content="Solutionby 高二蒟蒻学渣 Frog前言这道题如果你爆零了，需要对你惩罚； 要求最低得分：30 pts 得分情况注意看我的数据范围， 对10%的数据，有字符串的长度为2，根据题意，必然是 字符串  RL，这10分是我送给你们的； 对于40%的数据，其中我抽出了两个样例放在测试数据里面，20+10 =30pts到手，暴力算法我不知道怎么打，请没有得满分的同学讲一下做法； 对于100%的数，请">
+<meta property="og:description" content="高二蒟蒻瑟瑟发抖">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-12T11:46:12.658Z">
+<meta property="og:updated_time" content="2019-10-12T13:29:02.544Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从入门到普及-高一模拟赛题解">
-<meta name="twitter:description" content="Solutionby 高二蒟蒻学渣 Frog前言这道题如果你爆零了，需要对你惩罚； 要求最低得分：30 pts 得分情况注意看我的数据范围， 对10%的数据，有字符串的长度为2，根据题意，必然是 字符串  RL，这10分是我送给你们的； 对于40%的数据，其中我抽出了两个样例放在测试数据里面，20+10 =30pts到手，暴力算法我不知道怎么打，请没有得满分的同学讲一下做法； 对于100%的数，请">
+<meta name="twitter:description" content="高二蒟蒻瑟瑟发抖">
 
 
 
@@ -130,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="https://po8-qyj.github.io/2019/10/12/1011/">
+  <link rel="canonical" href="https://po8-qyj.github.io/2019/10/12/1/">
 
 
 
@@ -212,9 +211,9 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-about"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
             
             标签
           </a>
@@ -222,9 +221,9 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-categories"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
             
             分类
           </a>
@@ -232,9 +231,9 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archives"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
             
             归档
           </a>
@@ -273,7 +272,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://po8-qyj.github.io/2019/10/12/1011/">
+    <link itemprop="mainEntityOfPage" href="https://po8-qyj.github.io/2019/10/12/1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="po8-qyj">
@@ -302,7 +301,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-12T19:24:59+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-12T20:25:28+08:00">
                 2019-10-12
               </time>
             
@@ -326,6 +325,10 @@
           
 
           
+              <div class="post-description">
+                  高二蒟蒻瑟瑟发抖
+              </div>
+          
 
         </div>
       </header>
@@ -347,6 +350,8 @@
 <p>对10%的数据，有字符串的长度为2，根据题意，必然是 字符串  <strong>RL</strong>，这10分是我送给你们的；</p>
 <p>对于40%的数据，其中我抽出了两个样例放在测试数据里面，<strong><em>20+10</em> =<em>30pts</em></strong>到手，暴力算法我不知道怎么打，请没有得满分的同学讲一下做法；</p>
 <p>对于100%的数，请看正文；</p>
+<a id="more"></a>
+
 <h4 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h4><p>一句话题解</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我的做法是从左向右一组R和一组L进行计算，具体步骤看代码；因为最后只会在分解的两个R，L之间不断跳跃，注意判断一下每组R和L的strlen奇偶性，然后判断实在临界点的R位置+1还是临界点的L+1；</span><br></pre></td></tr></table></figure>
 
@@ -386,12 +391,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/题解/" rel="tag"># 题解</a>
-          
-        </div>
-      
 
       
       
@@ -401,8 +400,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/10/12/dd/" rel="next" title>
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2019/06/27/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -486,9 +485,9 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -496,15 +495,6 @@
 
             
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
-                
-              </div>
             
 
           </nav>
